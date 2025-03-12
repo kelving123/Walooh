@@ -35,6 +35,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"
       ></script>
+      
     </html>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,28 +59,36 @@
         <h2>The platform for Artists and Fans to connect</h2>
         <h4>Sign up below today!</h4>
       </div>
-      <form onsubmit="return testOne">
+      <form>
         <div id="email">
           <input type="text" id="Firstemail" placeholder="email" />
         </div>
         <div id="password">
           <input type="text" id="Firstpassword" placeholder="password" />
         </div>
-        <button type="submit" class="btn-navbar">Log In</button>
+        <button type="submit" class="btn-navbar"  onsubmit="loginExistingUser">Log In</button>
       </form>
       <img src="images/hero.jpg" />
     </div>
 
     <div id="section2">
-      <h1>Welcome to walooh.</h1>
-      <h2>This is testing to figure out how to design this page</h2>
-      <h3>Testing to see if publishing to github is working.</h3>
+      <h1>Discover, Connect, and Thrive Together</h1>
+      <h3 id="Ad-Copy-1">
+        Walooh is more than just a platform; it's a vibrant community where
+        artists and fans come together to share their passions, create lasting
+        connections, and inspire one another. Whether you're a seasoned artist
+        or just starting your creative journey, Walooh provides the tools and
+        support you need to build your following, engage with your audience, and
+        grow your art.
+      </h3>
+      <h3></h3>
     </div>
     <div id="section3">
       <h1>Testing new section</h1>
       <h2>This is also a test</h2>
       <h3>Even yet this is also a test</h3>
     </div>
-    <script src="javascript.js"></script>
+    
+    <script type="module" src="javascript.js" ></script>
   </body>
 </html>

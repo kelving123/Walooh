@@ -1,4 +1,17 @@
-// Firebase configuration
+// firebase.js
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+
+import {
+  getAuth,
+  GoogleAuthProvider,
+  FacebookAuthProvider,
+  TwitterAuthProvider,
+  GithubAuthProvider,
+  EmailAuthProvider,
+  PhoneAuthProvider,
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyC3blbLVYY78VqucJWyzuWkakBbz8rquJ0",
   authDomain: "walooh-6834f.firebaseapp.com",
@@ -9,27 +22,16 @@ const firebaseConfig = {
   measurementId: "G-QKKEJBWXYV",
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-// FirebaseUI config
-var uiConfig = {
-  signInSuccessUrl: "www.google.com",
-  signInOptions: [
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-    firebase.auth.GithubAuthProvider.PROVIDER_ID,
-    firebase.auth.EmailAuthProvider.PROVIDER_ID,
-    firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-    firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID,
-  ],
-  tosUrl: "index.html",
-  privacyPolicyUrl: function () {
-    window.location.assign("index.html");
-  },
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+3
+export {
+  auth,
+  GoogleAuthProvider,
+  FacebookAuthProvider,
+  TwitterAuthProvider,
+  GithubAuthProvider,
+  EmailAuthProvider,
+  PhoneAuthProvider,
 };
 
-// Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
-ui.start("#firebaseui-auth-container", uiConfig);

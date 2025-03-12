@@ -37,9 +37,11 @@
     <link rel="stylesheet" href="global.css" />
 
     <!-- Firebase Configuration -->
+
     <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+
     <link
       type="text/css"
       rel="stylesheet"
@@ -102,5 +104,8 @@
       // The start method will wait until the DOM is loaded.
       ui.start("#firebaseui-auth-container", uiConfig);
     </script>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="firebaseui.ts"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@ header ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
+  display: auto;
   align-items: center;
   justify-content: center; /* Align items horizontally at the center */
   margin-top: 2em;
@@ -10,10 +10,14 @@ header ul {
 }
 header {
   background-color: wheat;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
   opacity: 2em;
   height: 6.5em;
   -webkit-text-stroke-color: white;
   font-size: 20px;
+  margin: 0;
 }
 
 li {
@@ -27,6 +31,7 @@ a {
   color: black;
   -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: white;
+  padding-bottom: 2em;
 }
 
 li :hover {
