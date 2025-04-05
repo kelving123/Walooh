@@ -90,7 +90,9 @@ button {
 }
 
 @media only screen and (max-width: 480px) {
-    
+    .parent{
+      margin: auto;
+    }
 
 
   .headline{
@@ -103,5 +105,28 @@ button {
   form{
     position: sticky;
     margin: auto;
+    
+  }
+
+  #discover{
+    
+    padding-bottom: 3.5em
+  }
+
+  #Ad-Copy-1{
+    
+    padding-bottom: 4em;
+    word-wrap: break-word;
+    
+  }
+
+  #section2{
+    height: 6.5em;
+    
+  }
+
+  #section3{
+    margin-top: 35em;
+
   }
 }
