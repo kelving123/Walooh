@@ -91,7 +91,6 @@ button {
 
 @media only screen and (max-width: 480px) {
   body {
-    transform: scale(0.5); /* scales down the entire website to 50% on screens with a max-width of 480px */
   }
 
 
