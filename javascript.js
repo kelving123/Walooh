@@ -48,6 +48,8 @@ function createNewUser(event) {
       // Additional logic after successful user creation
       console.log("New user created:", user);
       // You can also redirect the user to another page or perform other actions
+
+      
       window.location.href = "about.html"
     })
     .catch((error) => {
@@ -63,9 +65,11 @@ function createNewUser(event) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
+  
+    const form = document.querySelector("form");
 
-  form.addEventListener("submit", testOne);
+    form.addEventListener("submit", testOne);
+  
 
   console.log("test");
 });
@@ -89,6 +93,8 @@ function loginExistingUser() {
     .then((userCredential) => {
       const user = userCredential.user
       console.log("Logged in user:", user);
+      
+
       // Redirect the user to a different page or perform other actions
       window.location.href = "about.html";
     })
@@ -98,4 +104,8 @@ function loginExistingUser() {
       console.error("Error logging in user:", errorMessage);
       // Display an error message to the user or perform other error handling
     });
+    
+
 }
+
+

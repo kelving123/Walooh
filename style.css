@@ -90,7 +90,11 @@ button {
 }
 
 @media only screen and (max-width: 480px) {
-    .parent{
+  .window{ max-width: 480px;
+
+  }  
+  
+  .parent{
       margin: auto;
     }
 
@@ -106,6 +110,11 @@ button {
     position: sticky;
     margin: auto;
     
+  }
+
+  #hero{
+    margin: auto;
+    margin-top: 6em;
   }
 
   #discover{
